@@ -3,7 +3,7 @@ import Footer from "../Footer/Footer";
 import Calendar from "react-calendar";
 import { useState } from "react";
 import "react-calendar/dist/Calendar.css";
-import { getHistoric } from "../../services/trackit";
+import { getHistoric } from "../../services/FocusDay.js";
 export default function Historic() {
   return (
     <Container>

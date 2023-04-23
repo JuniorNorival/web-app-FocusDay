@@ -1,14 +1,18 @@
-import { Container } from "../Today/Today";~
+import { Container } from "../Today/Today";
 import styled from "styled-components";
 import add from "../../assets/images/add.jpeg";
-import { getHabits, deleteHabit, getTodayHabits } from "../../services/trackit";
-import { useState, useEffect, useContext } from "react";~
-import Footer from "../Footer/Footer";~
-import { weekDays } from "../../helpers/WeekDays/weekday";
+import {
+  getHabits,
+  deleteHabit,
+  getTodayHabits,
+} from "../../services/FocusDay.js";
+import { useState, useEffect, useContext } from "react";
+import Footer from "../Footer/Footer";
+import { weekDays } from "../../helpers/Weekdays/Weekdays";
 import NewHabit from "../NewHabit/NewHabit";
 import { TrashOutline } from "react-ionicons";
 import UserContext from "../../context/UserContext";
-import { updateProgress } from "../../helpers/progress";
+import { updateProgress } from "../../helpers/Progress/Progress";
 import Loading from "../Loading/Loading";
 
 export default function Habits() {

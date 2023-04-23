@@ -1,4 +1,3 @@
-import headerLogo from "../../assets/images/TrackIt.svg";
 import styled from "styled-components";
 import { useLocation } from "react-router-dom";
 
@@ -11,7 +10,6 @@ export default function Header() {
   } else {
     return (
       <Head>
-        <img src={headerLogo} alt="logoHeader" />
         <ImgUser>
           <img src={userData.image} alt="UserIMG" />
         </ImgUser>

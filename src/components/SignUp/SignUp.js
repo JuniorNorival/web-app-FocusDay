@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Form, Container } from "../Login/Login";
-import { getSignUp } from "../../services/trackit";
+import { getSignUp } from "../../services/FocusDay.js";
 import { useNavigate, Link } from "react-router-dom";
 import { ThreeDots } from "react-loader-spinner";
 import Input from "../Input/Input";
-import { sendForm } from "../../helpers/loginFunctions";
+import { sendForm } from "../../helpers/LoginFunctions/LoginFunctions";
 
 export default function SingUp() {
   const [form, setForm] = useState({
@@ -47,7 +47,6 @@ export default function SingUp() {
 
   return (
     <Container>
-      <img src={logo} alt="logo" />
       <Form onSubmit={(e) => send(e)} button={button.disabled}>
         {Object.keys(form).map((name) => (
           <Input

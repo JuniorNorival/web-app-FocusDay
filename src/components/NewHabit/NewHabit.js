@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { weekDays } from "../../helpers/WeekDays/weekday";
+import { weekDays } from "../../helpers/Weekdays/Weekdays";
 import { useContext, useState } from "react";
-import { getTodayHabits, postHabits } from "../../services/trackit";
-import { updateProgress } from "../../helpers/progress";
+import { getTodayHabits, postHabits } from "../../services/FocusDay.js";
+import { updateProgress } from "../../helpers/Progress/Progress";
 import UserContext from "../../context/UserContext";
 
 export default function NewHabit({ habitName, setHabitName, setHabitsAdd }) {

@@ -1,10 +1,11 @@
 import { useState, useContext } from "react";
 import styled from "styled-components";
-import { getLogin } from "../../services/trackit";
+import { getLogin } from "../../services/FocusDay.js";
 import { Link, useNavigate } from "react-router-dom";
-import Input from "../Input/Input";
-import { sendForm } from "../../helpers/loginFunctions";
+import Input from "../Input/Input.js";
+import { sendForm } from "../../helpers/LoginFunctions/LoginFunctions.js";
 import UserContext from "../../context/UserContext";
+
 export default function Login() {
   const [form, setForm] = useState({
     email: "",

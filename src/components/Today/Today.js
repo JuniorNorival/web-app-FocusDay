@@ -3,7 +3,7 @@ import {
   getTodayHabits,
   checkHabit,
   unCheckHabit,
-} from "../../services/trackit";
+} from "../../services/FocusDay.js";
 import dayjs from "dayjs";
 import "dayjs/locale/pt-br";
 import updateLocale from "dayjs/plugin/updateLocale";
