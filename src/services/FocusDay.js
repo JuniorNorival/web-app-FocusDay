@@ -1,5 +1,5 @@
 import axios from "axios";
-const BaseURL = "https://mock-api.bootcamp.respondeai.com.br/api/v2/trackit";
+const BaseURL = "https://api-focusday-sql.onrender.com";
 
 function createConfig() {
   const userData = JSON.parse(localStorage.getItem("trackIt"));
